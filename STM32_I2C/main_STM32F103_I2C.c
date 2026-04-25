@@ -409,7 +409,7 @@ void BQ769x2_Init() {
 	// 'Power Config' - 0x9234 = 0x2D80
 	// Setting the DSLP_LDO bit allows the LDOs to remain active when the device goes into Deep Sleep mode
   	// Set wake speed bits to 00 for best performance
-	BQ769x2_SetRegister(PowerConfig, 0x0000, 2); //edited
+	BQ769x2_SetRegister(PowerConfig, 0x0000, 2); //edited in github
 
 	// 'REG0 Config' - set REG0_EN bit to enable pre-regulator
 	BQ769x2_SetRegister(REG0Config, 0x00, 1); //edited  
